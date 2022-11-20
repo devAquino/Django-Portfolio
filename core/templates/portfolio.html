@@ -1,0 +1,23 @@
+{% load static %}
+
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Portfolio</h2>
+        
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center gap-3">
+            <!-- Portfolio Item 1-->
+            <!-- Portfolio Item 1-->
+            {% for img in images %}
+            <div class="card shadow col-md-4 col-lg-3 ">
+                <img class="card-img-top" src="{{ img.image.thumb.url }}" alt="">
+                <div class="card-body">
+                  <p class="card-text text-center"> {{img.descricao}} </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
