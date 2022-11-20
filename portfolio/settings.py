@@ -142,19 +142,23 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-"""
-EMAIL_HOST = os.getenv('EMAIL_HOST')
-EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
-EMAIL_PORT = os.getenv('EMAIL_PORT')
-"""
-#EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
+# from dotenv import load_dotenv
 
-# EMAIL_HOST = os.getenv(EMAIL_HOST)
-# EMAIL_HOST_USER = os.getenv(EMAIL_HOST_USER)
-# EMAIL_HOST_PASSWORD = os.getenv(EMAIL_HOST_PASSWORD)
-# EMAIL_PORT = os.getenv(EMAIL_PORT)
-# EMAIL_USE_TLS = os.getenv(EMAIL_USE_TLS)
+# load_dotenv()
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = "aquinoreginaldo@gmail.com"
+# EMAIL_HOST_PASSWORD = "zdabywbjdsdrpmzl"
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_HOST_USER = "aquinoreginaldo@outlook.com"
+EMAIL_HOST_PASSWORD = "19821988@iar"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 LOGOUT_REDIRECT_URL = 'index' 
 DISABLE_COLLECTSTATIC=1
