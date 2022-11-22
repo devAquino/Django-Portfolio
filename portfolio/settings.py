@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-6dpl8q=na2%66kam*pmw1d%vg(_trw7&^!&^if98fm4k&ig=e='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
@@ -76,21 +76,21 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 # Usando o database localmente
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio',
-        'USER': 'postgres',
-        'PASSWORD':'010405', 
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'portfolio',
+#         'USER': 'postgres',
+#         'PASSWORD':'010405', 
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 # Utilizando o database não local
-# DATABASES = {
-#     'default': dj_database_url.config()
-# }
+DATABASES = {
+    'default': dj_database_url.config()
+}
 
 
 # Password validation
