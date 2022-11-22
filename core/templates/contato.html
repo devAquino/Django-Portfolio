@@ -20,13 +20,18 @@
             {% endif %}
         
             <div class="contact-block">
+<<<<<<< HEAD
               <form id="contactForm" method="post" autocomplete="off">
+=======
+              <form class="needs-validation" novalidate id="contactForm" method="post" action="{% url 'index' %}" autocomplete="off">
+>>>>>>> 1a31cf2b8d53f8aa4edf170a65a09b4b6e233f1d
                 {% csrf_token %}
                 <div class="row">
                   <div >
                     <div class="form-group mb-3">
                       <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Informe seu nome">
                       <div class="help-block with-errors"></div>
+<<<<<<< HEAD
                       <div class="invalid-feedback">
                         Informe seu nome.
                       </div>
@@ -40,28 +45,71 @@
                     </div>
                     <div class="invalid-feedback">
                       Informe seu email.
+=======
+                      <div class="valid-feedback">
+                        Ok!
+                      </div>
+                      <div class="invalid-feedback">
+                        Digite seu nome.
+                      </div>
+                    </div>
+                  </div>
+                  <div >
+                    <div class="form-group mb-3">
+                      
+                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+                      <div class="valid-feedback">
+                        Ok!
+                      </div>
+                      <div class="invalid-feedback">
+                        Informe um email válido!
+                      </div>
+                      
+>>>>>>> 1a31cf2b8d53f8aa4edf170a65a09b4b6e233f1d
                     </div>
                   </div>
                    <div >
                     <div class="form-group mb-3">
+<<<<<<< HEAD
                       <input type="text" placeholder="Telefone" id="assunto" name="assunto" class="form-control" required data-error="Informe um telefone">
                       <div class="help-block with-errors"></div>
                       <div class="invalid-feedback">
                         Informe seu telefone.
                       </div>
+=======
+                      <input type="text" placeholder="Telefone" id="telefone" name="telefone" class="form-control" required data-error="Please enter your subject">
+                      <div class="help-block with-errors"></div>
+                      <div class="valid-feedback">
+                        Ok!
+                      </div>
+                      <div class="invalid-feedback">
+                        Informe um telefone válido!
+                      </div>
+                      
+>>>>>>> 1a31cf2b8d53f8aa4edf170a65a09b4b6e233f1d
                     </div>
                   </div>
                   <div >
                     <div class="form-group mb-3">
                       <textarea class="form-control" id="mensagem" placeholder="Mensagem" name="mensagem" rows="7" data-error="Write your message" required></textarea>
                       <div class="help-block with-errors"></div>
+<<<<<<< HEAD
                       <div class="invalid-feedback">
                         Digite sua mensagem.
+=======
+                      <div class="valid-feedback">
+                        Ok!
+>>>>>>> 1a31cf2b8d53f8aa4edf170a65a09b4b6e233f1d
                       </div>
                       
                     </div>
                     <div class="submit-button text-left mt-2">
+<<<<<<< HEAD
                       <button class="col-12 col-md-2 col-lg-2 btn btn-primary " id="form-submit" type="submit">Enviar</button>
+=======
+                      <button class="col-12 col-md-2 col-lg-2 btn btn-primary" id="form-submit" type="submit">Enviar</button>
+>>>>>>> 1a31cf2b8d53f8aa4edf170a65a09b4b6e233f1d
                       <div id="msgSubmit" class="h3 text-center hidden"></div>
                       <div class="clearfix"></div>
                     </div>
