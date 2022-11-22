@@ -1,5 +1,4 @@
 {% load static %}
- 
 <section class="page-section contato" id="contato">
       
       <div class="container">
@@ -8,7 +7,7 @@
         <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Contato</h2>
         <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
        
-        <div class="row contact-form-area wow fadeInUp d-flex justify-content-center" data-wow-delay="0.3s">
+        <div class="row needs-validation contact-form-area wow fadeInUp d-flex justify-content-center p-3" data-wow-delay="0.3s" novalidate>
           <div class="col-md-6">
             {% if messages %}
               {% for m in messages %}
@@ -18,61 +17,28 @@
                 </div>
               {% endfor %}
             {% endif %}
-        
             <div class="contact-block">
-              <form class="needs-validation" novalidate id="contactForm" method="post" action="{% url 'index' %}" autocomplete="off">
+                <form  id="contactForm" method="post" action="{% url 'index' %}" autocomplete="off">
                 {% csrf_token %}
                 <div class="row">
                   <div >
                     <div class="form-group mb-3">
-                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Informe seu nome">
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required data-error="Please enter your name">
                       <div class="help-block with-errors"></div>
-                      <div class="invalid-feedback">
-                        Informe seu nome.
-                      </div>
-                    
-                    </div>
-                  </div>
-                  <div >          
-                    <div class="form-group mb-3">            
-                      <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Informe seu email">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                    <div class="invalid-feedback">
-                      Informe seu email.
-                      <div class="valid-feedback">
-                        Ok!
-                      </div>
-                      <div class="invalid-feedback">
-                        Digite seu nome.
-                      </div>
+                
                     </div>
                   </div>
                   <div >
                     <div class="form-group mb-3">
-                      
                       <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
                       <div class="help-block with-errors"></div>
-                      <div class="valid-feedback">
-                        Ok!
-                      </div>
-                      <div class="invalid-feedback">
-                        Informe um email válido!
-                      </div>
                       
                     </div>
                   </div>
                    <div >
                     <div class="form-group mb-3">
-          
-                      <input type="text" placeholder="Telefone" id="telefone" name="telefone" class="form-control" required data-error="Please enter your subject">
+                      <input type="text" placeholder="Telefone" id="assunto" name="assunto" class="form-control" required data-error="Please enter your subject">
                       <div class="help-block with-errors"></div>
-                      <div class="valid-feedback">
-                        Ok!
-                      </div>
-                      <div class="invalid-feedback">
-                        Informe um telefone válido!
-                      </div>
                       
                     </div>
                   </div>
@@ -80,16 +46,10 @@
                     <div class="form-group mb-3">
                       <textarea class="form-control" id="mensagem" placeholder="Mensagem" name="mensagem" rows="7" data-error="Write your message" required></textarea>
                       <div class="help-block with-errors"></div>
-                      <div class="invalid-feedback">
-                        Digite sua mensagem.
-                      <div class="valid-feedback">
-                        Ok!
-                      </div>
                       
                     </div>
                     <div class="submit-button text-left mt-2">
-                      <button class="col-12 col-md-2 col-lg-2 btn btn-primary " id="form-submit" type="submit">Enviar</button>
-              
+                      <button class="col-12 col-md-2 col-lg-2 btn btn-primary" id="form-submit" type="submit">Enviar</button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div>
                       <div class="clearfix"></div>
                     </div>
