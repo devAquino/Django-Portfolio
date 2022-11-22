@@ -12,13 +12,13 @@ class ContatoForm(forms.Form):
     def send_mail(self):
         nome = self.cleaned_data['nome']
         email = self.cleaned_data['email']
-        assunto = self.cleaned_data['assunto']
+        telefone = self.cleaned_data['telefone']
         mensagem = self.cleaned_data['mensagem']
 
-        conteudo = f'Nome: {nome}\nE-mail: {email}\nAssunto: {assunto}\nMensagem: {mensagem}'
+        conteudo = f'Nome: {nome}\nE-mail: {email}\nTelefone: {telefone}\nMensagem: {mensagem}'
 
         mail = EmailMessage(
-            subject=assunto,
+            subject=nome,
             body=conteudo,
             from_email=email,
             to=['aquinoreginaldo@hotmail.com',],
