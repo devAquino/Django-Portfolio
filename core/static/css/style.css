@@ -74,7 +74,7 @@
   :root {
     scroll-behavior: smooth;
   }
-}
+}   
 
 body {
   margin: 0;
@@ -2212,9 +2212,10 @@ progress {
   overflow: hidden;
 }
 
-/* .form-control[type=file]:not(:disabled):not([readonly]) {
+.form-control[type=file]:not(:disabled):not([readonly]) {
   cursor: pointer;
-} */
+}
+
 .form-control:focus {
   color: #212529;
   background-color: #fff;
