@@ -2272,7 +2272,8 @@ progress {
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* @media (prefers-reduced-motion: reduce) {
+
+@media (prefers-reduced-motion: reduce) {
   .form-control::-webkit-file-upload-button {
     -webkit-transition: none;
     transition: none;
@@ -2280,7 +2281,8 @@ progress {
   .form-control::file-selector-button {
     transition: none;
   }
-} */
+}
+
 .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
   background-color: #dde0e3;
 }
@@ -2303,15 +2305,16 @@ progress {
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-/* @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   .form-control::-webkit-file-upload-button {
     -webkit-transition: none;
     transition: none;
   }
-} */
-/* .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+}
+
+ .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
   background-color: #dde0e3;
-} */
+}
 
 .form-control-plaintext {
   display: block;
@@ -2427,11 +2430,13 @@ textarea.form-control-lg {
      -moz-appearance: none;
           appearance: none;
 }
-/* @media (prefers-reduced-motion: reduce) {
+
+@media (prefers-reduced-motion: reduce) {
   .form-select {
     transition: none;
   }
-} */
+}
+
 .form-select:focus {
   border-color: #8ddece;
   outline: 0;

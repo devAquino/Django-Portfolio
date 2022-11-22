@@ -151,12 +151,6 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = os.getenv('EMAIL_PORT')
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS')
 
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = "aquinoreginaldo@gmail.com"
-# EMAIL_HOST_PASSWORD = "zdabywbjdsdrpmzl"
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-
 
 LOGOUT_REDIRECT_URL = 'index' 
 DISABLE_COLLECTSTATIC=1

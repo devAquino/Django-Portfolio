@@ -25,5 +25,23 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            (function () {
+                'use strict'
+                var forms = document.querySelectAsll('.needs-validation')
+                
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidaty()){
+                                event.preventDefault()
+                                enven.stopPropagation()
+                            }
+            
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })();;
+        </script>
     </body>
 </html>
